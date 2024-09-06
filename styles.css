@@ -1,0 +1,199 @@
+body{
+    background: black;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+p{
+    font-size: 20px;
+    color: rgb(205, 138, 138);
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.author{
+    font-style: italic;
+    color: red;
+    font-size: 20px;
+    padding-top: 20px;
+    
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid rgb(41, 224, 13);
+    padding: 10px;
+    align-items: center;
+}
+.login-container {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.login {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+}
+
+.login::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00f6, #ff0000);
+    background-size: 400%;
+    border-radius: 10px;
+    z-index: -1;
+    animation: border-animation 20s linear infinite;
+}
+
+@keyframes border-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    text-align: left;
+    color: white;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #1a7599;
+    border-radius: 9px;
+    width: 90%;
+    background: transparent;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%; 
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.nav {
+    background-color: #333;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.nav nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nav nav ul li {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.nav nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav nav ul li a:hover {
+    background-color: #111;
+    border-radius: 9px;
+}
+.contact{
+    text-align: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+strong{
+    color: rgb(254, 253, 253);
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.course {
+    width: 80%;
+    max-width: 1000px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.course h1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+td {
+    font-size: 16px;
+}
